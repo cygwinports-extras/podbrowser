@@ -5,21 +5,20 @@ documentation for Perl's builtin functions, its "perldoc" pages,
 pragmatic modules and the default and user-installed modules.
 
 Runtime requirements:
-  cygwin-1.5.21-1
-  perl-5.8.7-5
-  perl-Glib-1.120-1
-  perl-Gtk2-1.122-1
-  perl-Gtk2-Ex-PodViewer-0.16-1
-  perl-Gtk2-Ex-PrintDialog-0.02-1
+  perl-5.8.8-4
+  perl-Glib-1.144-1
+  perl-Gtk2-1.146-1
+  perl-Gtk2-Ex-PodViewer-0.17-1
+  perl-Gtk2-Ex-PrintDialog-0.03-1
   perl-Gtk2-Ex-Simple-List-0.50-1
   perl-Gtk2-GladeXML-1.005-1
   perl-Locale-gettext-1.05-1
 
 Build requirements:
-  cygwin-1.5.21-1
-  cygport-0.2.5-1
+  cygwin-1.5.24-2
+  cygport-0.3.5-1
   make-3.81-1
-  sed-4.1.5-1
+  perl-5.8.8-4
 
 Canonical homepage:
   http://jodrell.net/projects/podbrowser
@@ -30,33 +29,38 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack podbrowser-0.10-X-src.tar.bz2
+  unpack podbrowser-0.11-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./podbrowser-0.10-X.cygport all
+  cygport ./podbrowser-0.11-X.cygport all
 
 This will create:
-  /usr/src/podbrowser-0.10-X-src.tar.bz2
-  /usr/src/podbrowser-0.10-X.tar.bz2
+  /usr/src/podbrowser-0.11-X-src.tar.bz2
+  /usr/src/podbrowser-0.11-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
+  /etc/postinstall/podbrowser.sh
   /usr/bin/html2ps-podbrowser
   /usr/bin/podbrowser
   /usr/share/applications/podbrowser.desktop
-  /usr/share/doc/Cygwin/podbrowser-0.10.README
-  /usr/share/doc/podbrowser-0.10/COPYING
-  /usr/share/doc/podbrowser-0.10/README
+  /usr/share/doc/Cygwin/podbrowser-0.11a.README
+  /usr/share/doc/podbrowser-0.11a/COPYING
+  /usr/share/doc/podbrowser-0.11a/README
   /usr/share/icons/hicolor/48x48/apps/podbrowser.png
+  /usr/share/locale/zh_CN.UTF-8/LC_MESSAGES/podbrowser.mo
   /usr/share/man/man1/podbrowser.1.gz
   /usr/share/podbrowser/podbrowser.glade
 
 ------------------
 
 Port Notes:
+
+----- version 0.11-1 -----
+Version bump.
 
 ----- version 0.10-1 -----
 Version bump, built with cygport.
