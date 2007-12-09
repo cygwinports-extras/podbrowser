@@ -1,0 +1,16 @@
+DESCRIPTION="Perl documentation browser"
+HOMEPAGE="http://jodrell.net/projects/podbrowser"
+SRC_URI="http://jodrell.net/files/${PN}/${P}.tar.gz"
+
+linguas="zh_CN.UTF-8"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake -j1 PREFIX=/usr
+}
+
+src_install() {
+	cd ${B}
+	cyginstall PREFIX=${D}/usr
+}

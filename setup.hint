@@ -1,5 +1,5 @@
 category: Doc Perl
-requires: cygwin perl perl-Glib perl-Gtk2 perl-Gtk2-Ex-PodViewer perl-Gtk2-Ex-PrintDialog perl-Gtk2-Ex-Simple-List perl-Gtk2-GladeXML perl-Locale-gettext
+requires: cygwin perl perl-Glib perl-Gtk2 perl-Gtk2-Ex-PodViewer perl-Gtk2-Ex-PrintDialog perl-Gtk2-Ex-Simple-List perl-Gtk2-GladeXML perl-HTML-Parser perl-Locale-gettext perl-URI
 sdesc: "Perl POD documentation browser"
 ldesc: "PodBrowser is a documentation browser for Perl. You can view the
 documentation for Perl's builtin functions, its "perldoc" pages,
